@@ -33,13 +33,63 @@
 
         <section>
             <h2>Handling Missing Values</h2>
-            Owing to large number of entries, only resale flat data from 2012 onwards was used to speed up data processing. 
-            This reduces the number of entries from 876,607 to 219,760. Moreover, resale prices from earlier years are much lower compared to current market prices.
-            The usage of older data will be covered in future sections, for the purpose of pattern / trend discovery.
+
+            <p>
+                Owing to large number of entries, only resale flat data from 2012 onwards was used to speed up data processing.
+                <br/>
+                This reduces the number of entries from 876,607 to 219,760.
+                Moreover, resale prices from earlier years are much lower compared to current market prices.<br/>
+                The usage of older data will be covered in future sections, for the purpose of pattern / trend discovery.
+            </p> 
+             
+            <br/>
+            <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/nullValues.JPG">
+            <br/>        
+            Only the column "remaining_lease" has null values. Singapore HDB flats are sold on 99 year leases. 
+            <br>Hence, the missing 'remaining lease' values can be obtained
+            by taking : 99 - (Registration Year - Lease Commence Date Year)
+            <br/>
+            <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/non_standard_values.JPG">
+            <br/>
+            Not all values in the 'remaining_lease' column are in standard format. Some were in integer values and some were written in years and months format as seen in the image.
+            <br>Hence, the existing values have to be first standardized before the null values can be handled. 
         </section>
 
+        <section>
+            <h2>Problem Definition and Feature Selection</h2>
+            <p>  
+                After cleaning the data, it is time to proceed with data analysis. It is important to first define the problem to be solved.
+                For this project, the goal is to find out factors affecting resale value of HDB flats and thereby, predict future resale prices
+                based on these factors.
+            </p>
+            <p>
+                There are 11 features and 1 label.
+                <ol>
+                    Features selected are:
 
+                         <li> town </li>
+                         <li> flat_type </li>
+                         <li> storey_range </li>
+                         <li> floor_area_sqm </li>
+                         <li> flat_model </li>
+                         <li> remaining_lease </li>
+
+                </ol>
+
+                <h5>Label : Resale Price</h5>
+
+            </p>
+          
+        </section>
     </main>
+
+    <footer>
+        
+        <a href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\SingaporeResaleFlats\html\DataAnalysis.html">Data Analysis</a>
+        ||
+        <a href= "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\SingaporeResaleFlats\html\index.html">Home</a> 
+
+    </footer>
     
 </body>
 </html>
