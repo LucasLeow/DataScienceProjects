@@ -42,13 +42,14 @@
                 The usage of older data will be covered in future sections, for the purpose of pattern / trend discovery.
             </p> 
              
-            <br/>
+            <h4>Identifying Missing Data</h4>
             <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/nullValues.JPG">
             <br/>        
             Only the column "remaining_lease" has null values. Singapore HDB flats are sold on 99 year leases. 
             <br>Hence, the missing 'remaining lease' values can be obtained
             by taking : 99 - (Registration Year - Lease Commence Date Year)
-            <br/>
+
+            <h4>Discovering non-standardized format</h4>
             <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/non_standard_values.JPG">
             <br/>
             Not all values in the 'remaining_lease' column are in standard format. Some were in integer values and some were written in years and months format as seen in the image.
