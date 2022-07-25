@@ -40,7 +40,31 @@
         <section>
             <h2>Analyzing East Region</h2>
             <p>
-                East Region is first analyzed since it has the most data
+                <br>
+                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/eastRegionPrice_ByTownBoxplot.jpg">
+                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/EastRegionResalePrices_FlatTypeboxplot.jpg">
+
+                <br>
+                Pasir Ris commands the highest median prices while Geylang has the lowest median prices. Pasir Ris is known to have many scenic routes including Pasir Ris Park,
+                Pasir Ris Heritage Trail, mangrove and Pasir Ris Town. It is located at the eastern edge of Singapore with a nearby Pasir Ris Beach Park.
+                Furthermore, it is near Changi International Airport, Singapore's main airport which makes it convenient for residents to travel to the airport.
+                It is extremely attractive since the design of that area is centred on the notion of a beachfront locale. 
+                <img width = "700" src = "https://sg.tepcdn.com/public/usr/dizcgy/3e0f8c-PASIR-RIS-small.jpg">
+                <img width = "700" src = "https://sgmagazine.com/sites/default/files/u143719/pasir_ris_beach.jpg">
+            </p>
+            <p>
+                In terms of Resale Price by flat type, Multi-Generation commands the highest median price while "2 ROOM" flat types have the lowest median price. 
+                The naming system of "flat_type" do not denote actual number of rooms but more so of floor area in square meters. <a href = "https://www.teoalida.com/singapore/hdbflattypes/">More Info..</a>
+                This suggest that floor area is somewhat correlated to Resale Price. Multi Generation flat type was specifically designed for multigeneration families staying together
+                and thus, bigger than 5-room flats.
+            </p>
+
+            <p>
+                <img src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/pairplot_scatterFloorArea_resalePrice.jpg">
+                <br>
+                From the correlation plot, the Pearson's Correlation Coefficient between "floor_area_sqm" and "resale_price" is highest at 0.77.
+                This suggests that perhaps, Linear Regression can be explored, using floor_area to predict resale_price.
+                <a href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\SingaporeResaleFlats\html\MLTechniques.html" target = "_blank">ML Techniques Explored</a>
             </p>
         </section>
     </main>
