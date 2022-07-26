@@ -1,0 +1,17 @@
+body {
+    background : Moccasin;
+    font-size : 20px;
+}
+
+.title1 {
+    color : MediumBlue	;
+}
+
+.title2 {
+    color : MediumBlue;
+}
+
+.links:hover {
+    color : red;
+    font-size : 25px;
+}
