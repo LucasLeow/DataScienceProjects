@@ -4,16 +4,8 @@ header {
 
 body {
     background : Moccasin;
-    font-size : 20px;
+    font-size : 30px;
     text-align : left;
-}
-
-.title1 {
-    color : MediumBlue	;
-}
-
-.title2 {
-    color : MediumBlue;
 }
 
 .links:hover {
