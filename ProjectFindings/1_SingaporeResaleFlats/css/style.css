@@ -1,0 +1,26 @@
+header {
+    text-align : center;
+}
+
+body {
+    background : #eddcbe;
+    font-size : 1.5em;
+    font-weight : 400;
+    font-family: "Calibri", sans-serif;
+    text-align : justify;
+}
+
+#title1 {
+    color : #0b064d;
+    font-family: "Calibri", cursive;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.title2 {
+    color : #150f66;
+}
+
+.links:hover {
+    color : red;
+}
