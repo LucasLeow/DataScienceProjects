@@ -9,19 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analysis</title>
-    <link rel = "stylesheet" type = "text/css" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\css\dataAnalysis.css">
+    <link rel = "stylesheet" type = "text/css" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\css\style.css">
     <span>
-        <a class = "links" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\index.html">Home</a>
+        <a class = "links" href = "g\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\index.html">Home</a>
     </span>
 </head>
 <body>
     <header>
-        <h1 class = "title1">Data Analysis</h1>
+        <h1 id = "title1">Data Analysis</h1>
     </header>
 
     <main>
         <section>
-            <h2>Splitting by towns</h2>
+            <h2 class = "title2">Splitting by towns</h2>
             <p>
                 After choosing the relevant features from feature selection process, the number of features reduced considerably from 11 to 6.
                 The resale flat data is split further by towns. In Singapore, there are 5 main regions namely North, East, South, West and Central.
@@ -43,11 +43,11 @@
         </section>
 
         <section>
-            <h2>Analyzing East Region</h2>
+            <h2 class = "title2">Analyzing East Region</h2>
             <p>
                 <br>
-                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/eastRegionPrice_ByTownBoxplot.jpg">
-                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/EastRegionResalePrices_FlatTypeboxplot.jpg">
+                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/eastRegionPrice_ByTownBoxplot.jpg">
+                <img width = "800" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/EastRegionResalePrices_FlatTypeboxplot.jpg">
 
                 <br>
                 Pasir Ris commands the highest median prices while Geylang has the lowest median prices. Pasir Ris is known to have many scenic routes including Pasir Ris Park,
@@ -55,8 +55,8 @@
                 Furthermore, it is near Changi International Airport, Singapore's main airport which makes it convenient for residents to travel to the airport.
                 It is extremely attractive since the design of that area is centred on the notion of a beachfront locale.
                 <br>
-                <img width = "700" src = "https://sg.tepcdn.com/public/usr/dizcgy/3e0f8c-PASIR-RIS-small.jpg">
-                <img width = "700" src = "https://sgmagazine.com/sites/default/files/u143719/pasir_ris_beach.jpg">
+                <img width = "700"  src = "https://sg.tepcdn.com/public/usr/dizcgy/3e0f8c-PASIR-RIS-small.jpg">
+                <img width = "700"  src = "https://sgmagazine.com/sites/default/files/u143719/pasir_ris_beach.jpg">
             </p>
             <p>
                 In terms of Resale Price by flat type, Multi-Generation commands the highest median price while "2 ROOM" flat types have the lowest median price. 
@@ -67,11 +67,11 @@
             </p>
 
             <p>
-                <img src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/SingaporeResaleFlat/pairplot_scatterFloorArea_resalePrice.jpg">
+                <img class = "center" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/pairplot_scatterFloorArea_resalePrice.jpg">
                 <br>
                 From the correlation plot, the Pearson's Correlation Coefficient between "floor_area_sqm" and "resale_price" is highest at 0.77.
                 This suggests that perhaps, Linear Regression can be explored, using floor_area to predict resale_price.
-                <a href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\SingaporeResaleFlats\html\MLTechniques.html" target = "_blank">ML Techniques Explored</a>
+                <a class = "links" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\MLTechniques.html" target = "_blank">ML Techniques Explored</a>
             </p>
         </section>
     </main>

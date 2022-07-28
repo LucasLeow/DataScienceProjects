@@ -19,15 +19,19 @@
         <section>
             <h3 class = "title2">Overview</h3>
             <ul>
-                <li>Univariate Linear Regression (Resale Price vs Floor Area)</li>
+                <li>Univariate Linear Regression</li>
+                <li>Multivariate Linear Regression
                 <li>Regression Tree</li>
             </ul>
         </section>
 
         <section>
-            <h3 class = "title2">Univariate Linear Regression (Resale Price vs Floor Area)</h3>
+            <h3 class = "title2">Univariate Linear Regression</h3>
             <p>
-                One of the simplest Machine Learning model is the Linear Regression model. Linear Regression is used to predict the value
+                In this section, <b>Floor Area</b> is used to predict <b>Resale Price</b>
+            </p>
+            <p>
+                One of the simplest machine learning model is the Linear Regression model. Linear Regression is used to predict the value
                 of a variable based on the value of another variable. In order for the linear model to make accurate prediction, the relationship
                 between the 2 variables must be linear.  To quantify a linear relationship, Pearson Correlation Coefficient is commonly used. When
                 all data points lie on the fitted linear line, then correlation will be +/- 1. (i.e perfectly positive/negative correlated).
@@ -59,7 +63,15 @@
         </section>
 
         <section>
-            <h3 class = "title2">Regression Tree</h3>
+            <h3 class = "title2">Multivariate Linear Regression</h3>
+            <p>In this section, <b>Floor Area</b> and <b>Remaining Lease</b> will be used to predict <b>Resale Price</b></p>.
+
+                <img class = "center" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/MultivariateLinRegScatter.JPG">
+            <p>
+                Correlation between Remaining Lease and Resale price is 0.142. This suggest that the linear correlation is not very strong.
+                This relatively weak correlation can be observed from the scatterplot, whereby change in any specific resale price is spread across
+                remaining lease. Plotting a 3D Scatterplot with Linear Regression line is not as straightforward, especially with 85000 data points.
+            </p>
         </section>
     </main>
     
