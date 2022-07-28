@@ -17,14 +17,15 @@
 
     <main>
         <section>
-            <h3>Overview</h3>
+            <h3 class = "title2">Overview</h3>
             <ul>
                 <li>Univariate Linear Regression (Resale Price vs Floor Area)</li>
+                <li>Regression Tree</li>
             </ul>
         </section>
 
         <section>
-            <h3>Univariate Linear Regression (Resale Price vs Floor Area)</h3>
+            <h3 class = "title2">Univariate Linear Regression (Resale Price vs Floor Area)</h3>
             <p>
                 One of the simplest Machine Learning model is the Linear Regression model. Linear Regression is used to predict the value
                 of a variable based on the value of another variable. In order for the linear model to make accurate prediction, the relationship
@@ -39,6 +40,26 @@
                 is calculated. Residual is nothing but the distance between the data point and the line drawn. The difference is squared to eliminate negative 
                 values and the results of all these differences are summed together, thereby arriving at the name - Residual Sum of Square.
             </p>
+
+            <img class = "center" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/LinReg.JPG">
+            <p>
+                The Pearson's correlation between <b>Floor Area </b> and <b>Resale Price</b> is 0.7685, a relatively positive correlation.
+                The Pearson's correlation is calculated using Covariance(x,y) / (var(x) * var(y)). The Covariance is calculated using sum((x - xbar)(y - ybar)) / (n-1).
+                The purpose of Pearson's correlation is to simply quantify linear relationship between the 2 variables.
+                Therefore, Pearson's correlation does not touch on how well linear line can predict results. This can be performed through Explained Variance
+                R<sup>2</sup>. 
+            </p>
+
+            <p>
+                The explained variance for this linear regression line is 0.59. Explained Variance is given by (var(mean) - var(line)) / var(mean) where
+                var(mean) = sum((x - xbar)<sup>2</sup>) and var(line) = sum(x - xline)<sup>2</sup>. Explained variance is a metric to discuss how well line
+                is fitted to our data. Hence, an R<sup>2</sup> of 59% suggest that 59% of the variation of Resale Price is explained by floor area.
+                This is quite expected since from the image, most datapoints are not within the line. Hence, linear regression may not be suitable here for prediction.
+            </p>
+        </section>
+
+        <section>
+            <h3 class = "title2">Regression Tree</h3>
         </section>
     </main>
     

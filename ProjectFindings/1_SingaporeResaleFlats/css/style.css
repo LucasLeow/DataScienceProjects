@@ -19,8 +19,15 @@ body {
 
 .title2 {
     color : #150f66;
+    font-family: "Calibri";
 }
 
 .links:hover {
     color : red;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
