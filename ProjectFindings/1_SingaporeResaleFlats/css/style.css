@@ -41,9 +41,18 @@ body {
 }
 
 .image1 {
-    border : 5px solid #150f66;
+    border : 2px solid #150f66;
 }
 
-.container {
-    display : flex;
+
+/* Data Analysis CSS */
+
+.set_margin {
+    margin : 1.1em 2em;
+    display : block;
+}
+
+
+.float_right {
+    float: right;
 }
