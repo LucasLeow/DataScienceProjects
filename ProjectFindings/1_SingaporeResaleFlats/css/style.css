@@ -31,10 +31,19 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .center_small{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image1 {
+    border : 5px solid #150f66;
+}
+
+.container {
+    display : flex;
 }

@@ -1,7 +1,9 @@
 This Repository contains all the DS Projects performed.
 
-ProjectFindings(HTML) directory contains the findings I discovered, coded using HTML to improve my HTML skills.
+jupyterNotebooks directory contains all the jupyter notebooks used for data analysis and machine learning.
 
-css directory contains the relevant stylesheets linked to the corresponding html file in ProjectFindings, to improve my css.
+ProjectFindings(HTML) directory contains the key findings I discovered, coded in HTML. 
 
-jupyterNotebooks directory contain all the jupyter notebooks used for data analysis and machine learning
+css directory contains the relevant stylesheets linked to the corresponding html file in ProjectFindings.
+
+Project Goals contains the goal / objective for each project performed.

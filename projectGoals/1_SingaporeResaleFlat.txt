@@ -1,0 +1,4 @@
+Goal of Singapore Resale Flat Project
+- Familiarize with Data Cleaning (Filling in null values)
+- Perform Linear Regression and Regression Tree to predict Resale Prices
+- Have a general idea of the trend of Singapore Resale Flats and their prices
