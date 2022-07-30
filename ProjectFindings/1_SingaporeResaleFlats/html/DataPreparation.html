@@ -18,7 +18,7 @@
 
     <main>
         <section>
-            <h2 class = "title2">Data Source</h2>
+            <h3 class = "title2">Data Source</h3>
             Data was stored in 5 separate csv files.
             <br/>
             <img width = "300" img src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/DataSource.JPG" alt = "image of csv directory"/>
@@ -33,7 +33,7 @@
         </section>
 
         <section>
-            <h2 class = "title2">Handling Missing Values</h2>
+            <h3 class = "title2">Handling Missing Values</h3>
 
             <p>
                 Owing to large number of entries, only resale flat data from 2012 onwards was used to speed up data processing.
@@ -42,14 +42,14 @@
                 The usage of older data will be covered in future sections, for the purpose of pattern / trend discovery.
             </p> 
              
-            <h4>Identifying Missing Data</h4>
+            <h3 class = "title2">Identifying Missing Data</h3>
             <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/nullValues.JPG">
             <br/>        
             Only the column "remaining_lease" has null values. Singapore HDB flats are sold on 99 year leases. 
             Hence, the missing 'remaining lease' values can be obtained
             by taking : 99 - (Registration Year - Lease Commence Date Year)
 
-            <h4>Discovering non-standardized format</h4>
+            <h3 class = "title2">Discovering non-standardized format</h3>
             <img width = "250" src = "https://raw.githubusercontent.com/LucasLeow/DataScienceProjects/main/Images/1_SingaporeResaleFlat/non_standard_values.JPG">
             <br/>
             Not all values in the 'remaining_lease' column are in standard format. Some were in integer values and some were written in years and months format as seen in the image.
@@ -57,7 +57,7 @@
         </section>
 
         <section>
-            <h2 class = "title2">Problem Definition and Feature Selection</h2>
+            <h3 class = "title2">Problem Definition and Feature Selection</h3>
             <p>  
                 After cleaning the data, it is time to proceed with data analysis. It is important to first define the problem to be solved.
                 For this project, the goal is to find out factors affecting resale value of HDB flats and thereby, predict future resale prices
@@ -65,8 +65,9 @@
             </p>
             <p>
                 There are 11 features and 1 label.
+                Features selected are:
                 <ol>
-                    Features selected are:
+                    
 
                          <li> town </li>
                          <li> flat_type </li>
@@ -77,18 +78,30 @@
 
                 </ol>
 
-                <b>Label : Resale Price<b>
+                <b>Label : Resale Price</b>
 
             </p>
           
+        </section>
+
+        <section>
+            <h3 class = "title2">Label Encoding For Regression Tree Classifier</h3>
+            <p>
+                Some of the features are categorical (in string format). However, ML model only accepts numerical inputs. Hence, the categorical variables have 
+                to be label encoded.
+            </p>
+
         </section>
     </main>
 
     <footer>
         
+
+        <a class = "links" href= "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\index.html">Home</a> 
+        ||
         <a class = "links" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\DataAnalysis.html">Data Analysis</a>
         ||
-        <a class = "links" href= "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\index.html">Home</a> 
+        <a class = "links" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\MLTechniques.html">ML Techniques</a>
 
     </footer>
     

@@ -85,6 +85,28 @@
                 Linear Regression will not be a very useful model here to predict Resale Prices. 
             </p>
         </section>
+
+        <section>
+            <h3 class = "title2">Regression Tree</h3>
+            <p>
+                Regression Tree is explored to determine if it can be a good model for predicting Resale Price. Regression Trees may be a better model
+                to fit features with non-linear relationships. The features used for predicting Resale Price are:
+                <ul>
+                    <li>town</li>
+                    <li>flat_type</li>
+                    <li>storey_range</li>
+                    <li>floor_area</li>
+                    <li>flat_model</li>
+                    <li>remaining_lease</li>
+                </ul>
+                In order to train a Regression Tree model using Scikit-Learn, some of the variables have to be label encoded since they are in string format.
+                Head over to <a class = "links" href = "C:\Users\leowj\OneDrive - Nanyang Technological University\Self_Learning\DataScienceProjects\ProjectFindings\1_SingaporeResaleFlats\html\DataPreparation.html"> Data Preparation</a> to find out more.
+            </p>
+            <p>
+                The first step to performing Regression Tree is to find the optimum Depth.  The optimal depth determined in this scenario was 15, whereby the accuracy plateaus at about 85%.
+                The performance of the Regression Tree was also not very optimal. The MSE was calculated to be 6,109,905,343. That is only a mere improvement of 300,000,000 from the linear regression model.
+            </p>
+        </section>
     </main>
     
 </body>
