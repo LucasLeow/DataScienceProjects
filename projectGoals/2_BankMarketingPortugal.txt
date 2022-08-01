@@ -1,0 +1,6 @@
+Goal of Bank Marketing (Portugal) Project
+- Familiarize with classification techniques by determining if customer will subscribe or no
+- Understand theory on logistic regression & apply logistic regression to see if suitable
+- Understand the different classification metrics
+- Perform Decision Tree Classifier
+- Perform Neural Network for Classification
